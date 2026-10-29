@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6.3 - Overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Overflow Demonstration</h1>
+        <p>Explore how CSS handles content that exceeds a container.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="example">
+            <h2>1. Overflow: Visible</h2>
+            <div class="box overflow-visible">
+                <p>
+                    This is a demonstration of visible overflow.
+                    When the content exceeds the fixed height of
+                    this container, it continues to display outside
+                    the box. The extra text is not clipped and may
+                    overlap other content below.
+                </p>
+                <p>
+                    Additional text makes the overflow easier to see.
+                    This paragraph continues beyond the container.
+                </p>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>2. Overflow: Hidden</h2>
+            <div class="box overflow-hidden">
+                <p>
+                    This is a demonstration of hidden overflow.
+                    Content that extends beyond the fixed height
+                    of the container is clipped and cannot be seen.
+                </p>
+                <p>
+                    This extra paragraph is hidden below the visible
+                    area of the box.
+                </p>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>3. Overflow: Auto</h2>
+            <div class="box overflow-auto">
+                <p>
+                    This is a demonstration of automatic overflow.
+                    When content exceeds the container, a scrollbar
+                    appears as needed so users can access the rest.
+                </p>
+                <p>
+                    Here is more text to make the content overflow.
+                    Scroll inside this box to read the remaining text.
+                </p>
+                <p>
+                    The auto property avoids showing unnecessary
+                    scrollbars when all content fits.
+                </p>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>4. Overflow: Scroll</h2>
+            <div class="box overflow-scroll">
+                <p>
+                    This is a demonstration of scroll overflow.
+                    A scrolling mechanism is provided even when
+                    the content does not need to overflow.
+                </p>
+                <p>
+                    Additional text makes it possible to scroll
+                    through the content inside this fixed-height box.
+                </p>
+                <p>
+                    Keep scrolling to view all the text.
+                </p>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>5. Fixed Layout Using Overflow Auto</h2>
+            <div class="fixed-container">
+                <h3>Club Announcements</h3>
+                <p>Announcement 1: Registration is now open.</p>
+                <p>Announcement 2: Workshop scheduled for Monday.</p>
+                <p>Announcement 3: Submit projects before Friday.</p>
+                <p>Announcement 4: Club meeting at 2 PM.</p>
+                <p>Announcement 5: New members are welcome.</p>
+                <p>Announcement 6: Check the notice board regularly.</p>
+                <p>Announcement 7: Bring your student ID.</p>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>6. Overflow Issue: Before and After</h2>
+
+            <h3>Before Fix</h3>
+            <div class="layout-before">
+                This content has a fixed width that is too large
+                for small screens, causing horizontal overflow.
+            </div>
+
+            <h3>After Fix</h3>
+            <div class="layout-after">
+                This container uses a responsive width and
+                wraps text to fit the available screen space.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Assignment 6.3 — Overflow & Layout Fixing</p>
+    </footer>
+
+</body>
+</html>

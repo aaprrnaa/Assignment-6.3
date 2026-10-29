@@ -1,0 +1,126 @@
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f1f5f9;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1d4ed8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.example {
+    margin-bottom: 35px;
+}
+
+.example h2 {
+    color: #0f766e;
+}
+
+/* Common fixed-size boxes */
+.box {
+    width: 100%;
+    max-width: 500px;
+    height: 130px;
+    padding: 15px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/* 1. Visible overflow */
+.overflow-visible {
+    overflow: visible;
+    border-color: #2563eb;
+}
+
+/* 2. Hidden overflow */
+.overflow-hidden {
+    overflow: hidden;
+    border-color: #dc2626;
+}
+
+/* 3. Auto overflow */
+.overflow-auto {
+    overflow: auto;
+    border-color: #16a34a;
+}
+
+/* 4. Scroll overflow */
+.overflow-scroll {
+    overflow: scroll;
+    border-color: #9333ea;
+}
+
+/* 5. Fixed-height scrollable container */
+.fixed-container {
+    height: 180px;
+    max-width: 500px;
+    overflow: auto;
+    padding: 15px;
+    border: 2px solid #0f766e;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.fixed-container h3 {
+    margin-top: 0;
+}
+
+/* 6. Overflow problem before the fix */
+.layout-before {
+    width: 800px;
+    padding: 15px;
+    background-color: #fee2e2;
+    border: 2px solid #dc2626;
+    margin-bottom: 20px;
+}
+
+/* Responsive layout after the fix */
+.layout-after {
+    width: 100%;
+    max-width: 800px;
+    overflow-wrap: anywhere;
+    padding: 15px;
+    background-color: #dcfce7;
+    border: 2px solid #16a34a;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #64748b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .box,
+    .fixed-container {
+        max-width: 100%;
+    }
+}
